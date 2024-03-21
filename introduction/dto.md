@@ -1,4 +1,4 @@
-# Data Transfer Object (TDO)
+# Data Transfer Object (DTO)
 
 Padrão de software voltado para a transferência de dados entre as camadas de uma aplicação. Ele consiste basicamente no entendimento de como as informações trafegam dentro de um sistema. 
 
