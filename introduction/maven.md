@@ -49,6 +49,30 @@ Caminho deve estar similar a isso:
 
         mvn -v
 
+
+# Instalando mais dependencias...
+
+Ao decorrer do projeto, necessitamos adicionar mais dependências, certo?
+
+Vamos para um exemplo prático, podendo fazer da seguinte maneira:
+
+- https://start.spring.io/
+- Mantendo as mesmas configurações citadas anteriormente, focar apenas na parte de Dependencies,
+- Clicar em "Add Dependencies" (CTRL + B)
+- Após isso, clicar em "Explore" (CTRL + SPACE)
+- Em "pom.xml" estará disponivel as  dependências que foram selecionadas
+- Basta copiar e colar no "pom.xml" da sua aplicação
+
+        <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+
+- CTRL + S | Baixar todas as dependências para serem utilizadas em nossa aplicação
+- Caso não funfe > Maven (Canto superior direito, escrito deitado) > Lifecycle > clean ou install
+    #### Não tenho absoluta se é a forma mais correta, fui fuçando e funcionou... Em breve pesquisarei confirmações.
+
+
 ## Referência
 
  - [Conhecendo Melhor o Maven](https://www.alura.com.br/artigos/conhecendo-melhor-maven)
