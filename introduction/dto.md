@@ -8,9 +8,7 @@ Quando desenvolvemos uma aplicação existem diversas responsabilidades e camada
 
 ## Compatibilidade
 
-A questão é que dados externos podem vir de diversas maneiras e formatos, como API REST, CLI, gRPC ou sistemas de mensageria. E como os dados não necessariamente chegam num formato compatível, as informações passam pelas camadas mais internas do sistema até chegarem ao nível de entidade, que são os fundamentos básicos de toda a aplicação.
-
---- 
+A questão é que dados externos podem vir de diversas maneiras e formatos, como API REST, CLI, gRPC ou sistemas de mensageria. E como os dados não necessariamente chegam num formato compatível, as informações passam pelas camadas mais internas do sistema até chegarem ao nível de entidade, que são os fundamentos básicos de toda a aplicação. 
 
 Pensando nesses detalhes nós podemos criar um objeto, que é basicamente uma classe, dependendo do contexto no qual você está inserido. Mas a ideia é que você tenha um objeto totalmente anêmico, que vai apenas receber os dados naquele estado específico. Ele vai, por exemplo, fazer a serialização de JSON ou XML, preenchendo a sua propriedade exatamente num formato que a sua entidade, caso de uso ou seu serviço precisa receber, sem fazer qualquer contato entre as camadas inferiores do seu sistema.
 
